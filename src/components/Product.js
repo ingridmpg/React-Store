@@ -3,12 +3,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import cart from "../cart-plus.svg";
 import { ProductConsumer } from "../context";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 export default class Product extends Component {
     render() {
         const { id, title, img, price, inCart } = this.props.product;
         return (
-            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3">
+            <ProductWrapper className="col-9 mx-auto mb-4 col-md-6 col-lg-3">
                 <div className="card">
                     <ProductConsumer>
                         {(value) => (
@@ -43,10 +45,7 @@ export default class Product extends Component {
                                         </p>
                                     ) : (
                                         <span>
-                                            <img
-                                                src={cart}
-                                                className="fas fa-cart-plus"
-                                            />
+                                            <FontAwesomeIcon icon={faCartPlus} />
                                         </span>
                                     )}
                                 </button>
