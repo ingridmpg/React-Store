@@ -30,14 +30,6 @@ class App extends Component {
 
 export default App;
 
-// Stoped min 42:09
-// Stoped min 1:00:16
-// Stoped min 1:48:48
-// Stoped min 2:28:32
-// Stoped min 3:24:25
-// Stoped min 3:48:59
-// Stoped min 4:16:51
-// Stoped min 4:37:18
-// Stoped min 4:57:07
+
 // Time 5:47 => deploy aplication - do later
 // Time 5:52 => paypall button - continue here next time

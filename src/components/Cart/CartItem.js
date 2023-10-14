@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
 export default function CartItem({ item, value }) {
     const { id, title, img, price, total, count } = item;
@@ -42,7 +44,7 @@ export default function CartItem({ item, value }) {
             </div>
             <div className="col-10 mx-auto col-lg-2">
                 <div className="cart-icon" onClick={() => removeItem(id)}>
-                    <i className="fas fa-trash">TRASH HERE</i>
+                <FontAwesomeIcon icon={faTrashCan} />
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">

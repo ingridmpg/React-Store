@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.svg";
-import cart from "../cart-plus.svg";
 import styled from "styled-components";
 import { ButtonContainer } from "./Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 export default class Navbar extends Component {
     render() {
@@ -24,10 +25,9 @@ export default class Navbar extends Component {
                 </ul>
                 <Link to="/cart" className="ml-auto">
                     <ButtonContainer>
-                        <span className="mr-2">
-                            <img src={cart} className="fas fa-cart-plus" />
-                        </span>
-                        my cart
+                        <span>
+                        <FontAwesomeIcon icon={faCartPlus} />
+                        </span>  my cart
                     </ButtonContainer>
                 </Link>
             </NavWrapper>
