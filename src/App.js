@@ -29,7 +29,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// Time 5:47 => deploy aplication - do later
-// Time 5:52 => paypall button - continue here next time

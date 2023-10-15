@@ -23,7 +23,7 @@ export default class Navbar extends Component {
                         </Link>
                     </li>
                 </ul>
-                <Link to="/cart" className="ml-auto">
+                <Link to="/cart" className="ms-auto">
                     <ButtonContainer>
                         <span>
                         <FontAwesomeIcon icon={faCartPlus} />
@@ -36,7 +36,7 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-    background: var(--mainBlue);
+    background: var(--mainGray);
     .nav-link {
         color: var(--mainWhite) !important;
         font-size: 1.3rem;
