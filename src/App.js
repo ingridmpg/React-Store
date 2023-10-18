@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Brand from "./components/Brand";
 import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
@@ -15,6 +16,7 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
+                <Brand />
                 <Navbar />
                 <Routes>
                     <Route exact path="/" element={<ProductList />} />

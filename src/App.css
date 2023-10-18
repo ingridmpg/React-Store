@@ -6,6 +6,7 @@
     --mainYellow: #ffa400;
     --mainGray: #dedee2;
     --lightGray: #f3f3f3;
+    --black: #000000;
 }
 body {
     font-family: "Oswald", sans-serif !important;
@@ -13,8 +14,11 @@ body {
     color: var(--mainDark) !important;
 }
 .text-title {
-    font-family: "Permanent Marker", cursive;
-    letter-spacing: 0.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-navbar {
+    font-family: "Copperplate";
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
 .text-blue {
