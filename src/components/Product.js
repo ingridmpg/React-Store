@@ -70,6 +70,7 @@ const ProductWrapper = styled.div`
     .card {
         border-color: transparent;
         transition: all 1s linear;
+        background-color: var(--lightGray);
     }
     .card-footer {
         background: transparent;
@@ -100,7 +101,7 @@ const ProductWrapper = styled.div`
         bottom: 0;
         right: 0;
         padding: 0.2rem 0.4rem;
-        background: var(--lightBlue);
+        background: var(--black);
         border: none;
         color: var(--mainWhite);
         font-size: 1.4rem;
@@ -112,7 +113,8 @@ const ProductWrapper = styled.div`
         transform: translate(0, 0);
     }
     .cart-btn:hover {
-        color: var(--mainBlue);
+        background: var(--mainWhite);
+        color: var(--black);
         cursor: pointer;
     }
 `;
